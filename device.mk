@@ -136,7 +136,12 @@ PRODUCT_PACKAGES += \
     init.crda.sh \
     init.qcom.rc \
     init.qcom.usb.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+
+# Ramdisk for felica
+PRODUCT_PACKAGES += \
+    init.carrier.rc \
+    init.felica.sh
 
 # Thermal
 PRODUCT_COPY_FILES += \

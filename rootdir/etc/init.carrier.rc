@@ -1,0 +1,54 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+# Tmm Add Start
+on init
+    export EXTERNAL_STORAGE_DOCOMO /storage/extSdCard
+
+on post-fs-data
+# FeliCa
+    exec /system/bin/sh /init.felica.sh
+
+    mkdir /efs/FeliCaLock 0770 system system
+    chown system system /efs/FeliCaLock/01
+    chmod 0660 /efs/FeliCaLock/01
+    chown system system /efs/FeliCaLock/02
+    chmod 0660 /efs/FeliCaLock/02
+
+# Japan Add NFC Type Setting(Osaifu.cfg)
+    mkdir /data/misc/osaifu 0755 system system
+    chmod 644 /data/misc/osaifu/osaifu.cfg
+    chown system system /data/misc/osaifu/osaifu.cfg    
+
+# Fingerprint
+    mkdir /dev/validity 0770 system system
+
+service mfsc /system/bin/mfsc
+    class core
+    user root
+    group system felicalock nfc
+    oneshot
+
+service mfdp /system/bin/mfdp
+    class core
+    user root
+    group system felicalock nfc
+    oneshot
+
+# JPN: For MobileTV [ISDBT] \android\device\samsung\kltedcm\init.kltedcm.rc
+    mkdir /data/one-seg 0775 system system
+    chown system system /data/one-seg
+    chmod 0777 /data/one-seg
+
+    chown system system /dev/isdbt
+    chmod 0666 /dev/isdbt
+
+# JPN: For MobileTV [ISDBT] \android\device\samsung\kltedcm\init.kltedcm.rc
+service mobileTV /system/bin/broadcastProcessObserver
+    class main
+    user system
+    group system radio audio camera graphics inet net_bt net_bt_admin net_raw sdcard_rw sdcard_r shell
+
