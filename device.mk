@@ -110,6 +110,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+PRODUCT_PACKAGES += \
+    NfcSony
+
 # NFC
 #PRODUCT_PACKAGES += \
 #    com.android.nfc_extras \
