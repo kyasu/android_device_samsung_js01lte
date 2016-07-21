@@ -1,6 +1,6 @@
-Copyright 2015 - The CyanogenMod Project
+Copyright 2016 - The CyanogenMod Project
 
-Device configuration for Samsung Galaxy Note 3 (hltedcm).
+Device configuration for Samsung Galaxy J (SC-02F).
 
 WORK IN PROGRESS. WILL EAT YOUR CAT.
 ------------------------------------------------------------------
@@ -19,8 +19,8 @@ WORK IN PROGRESS. WILL EAT YOUR CAT.
 
     <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" />
 
-    <project name="kyasu/android_device_samsung_hltedcm" path="device/samsung/hltedcm" remote="github" />
+    <project name="kyasu/android_device_samsung_js01ltedcm" path="device/samsung/js01ltedcm" remote="github" />
+    <project name="kyasu/android_vendor_samsung_js01ltedcm" path="vendor/samsung/js01ltedcm" remote="github" />
     <project name="kyasu/android_kernel_samsung_hltedcm" path="kernel/samsung/hltedcm" remote="github" />
-    <project name="kyasu/android_vendor_samsung_hltedcm" path="vendor/samsung/hltedcm" remote="github" />
 
   </manifest>

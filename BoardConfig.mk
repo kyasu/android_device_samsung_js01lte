@@ -15,11 +15,11 @@
 # inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/hltedcm
+LOCAL_PATH := device/samsung/js01ltedcm
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-TARGET_OTA_ASSERT_DEVICE := hlte,hltedcm,SM-N900D,SC-01F
+TARGET_OTA_ASSERT_DEVICE := js01ltedcm,js01lte,hltejs01dcm,SC-02F,SGH-N075
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -37,7 +37,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974_sec_hlte_dcm_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974_sec_js01lte_dcm_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := cm_selinux_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/hltedcm
 
@@ -46,7 +46,7 @@ BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_hltedcm.txt
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_js01ltedcm.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -60,15 +60,15 @@ TARGET_PROVIDES_CAMERA_HAL := true
 COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/hltedcm/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/js01ltedcm/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/hltedcm/ril
+BOARD_RIL_CLASS := ../../../device/samsung/js01ltedcm/ril
 
 # GPS
 TARGET_NO_RPC := true
-TARGET_GPS_HAL_PATH := device/samsung/hltedcm/gps
+TARGET_GPS_HAL_PATH := device/samsung/js01ltedcm/gps
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
@@ -145,7 +145,7 @@ endif
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/samsung/hltedcm/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/js01ltedcm/sepolicy
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
@@ -163,4 +163,4 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 
 # inherit from the proprietary version
--include vendor/samsung/hltedcm/BoardConfigVendor.mk
+-include vendor/samsung/js01ltedcm/BoardConfigVendor.mk
