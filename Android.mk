@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),js01ltedcm)
+ifeq ($(TARGET_DEVICE),js01lte)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

@@ -19,8 +19,8 @@ WORK IN PROGRESS. WILL EAT YOUR CAT.
 
     <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" />
 
-    <project name="kyasu/android_device_samsung_js01ltedcm" path="device/samsung/js01ltedcm" remote="github" />
-    <project name="kyasu/android_vendor_samsung_js01ltedcm" path="vendor/samsung/js01ltedcm" remote="github" />
+    <project name="kyasu/android_device_samsung_js01lte" path="device/samsung/js01lte" remote="github" />
+    <project name="kyasu/android_vendor_samsung_js01lte" path="vendor/samsung/js01lte" remote="github" />
     <project name="kyasu/android_kernel_samsung_hltedcm" path="kernel/samsung/hltedcm" remote="github" />
 
   </manifest>

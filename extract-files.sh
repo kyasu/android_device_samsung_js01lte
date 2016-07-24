@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-export DEVICE=js01ltedcm
+export DEVICE=js01lte
 export VENDOR=samsung
 
 function extract() {

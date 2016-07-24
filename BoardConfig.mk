@@ -15,11 +15,11 @@
 # inherit from common msm8974
 -include device/samsung/msm8974-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/js01ltedcm
+LOCAL_PATH := device/samsung/js01lte
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-TARGET_OTA_ASSERT_DEVICE := js01ltedcm,js01lte,hltejs01dcm,SC-02F,SGH-N075
+TARGET_OTA_ASSERT_DEVICE := js01lte,js01ltedcm,hltejs01dcm,sc02f,SC-02F,SGH-N075
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -46,7 +46,7 @@ BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_js01ltedcm.txt
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_js01lte.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -60,15 +60,15 @@ TARGET_PROVIDES_CAMERA_HAL := true
 COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/js01ltedcm/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/js01lte/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/js01ltedcm/ril
+BOARD_RIL_CLASS := ../../../device/samsung/js01lte/ril
 
 # GPS
 TARGET_NO_RPC := true
-TARGET_GPS_HAL_PATH := device/samsung/js01ltedcm/gps
+TARGET_GPS_HAL_PATH := device/samsung/js01lte/gps
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
@@ -147,7 +147,7 @@ endif
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/samsung/js01ltedcm/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/js01lte/sepolicy
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
@@ -165,4 +165,4 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 
 # inherit from the proprietary version
--include vendor/samsung/js01ltedcm/BoardConfigVendor.mk
+-include vendor/samsung/js01lte/BoardConfigVendor.mk
