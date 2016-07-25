@@ -17,6 +17,7 @@
 package com.android.internal.telephony;
 
 import android.content.Context;
+import android.os.Message;
 import android.provider.Settings;
 
 /**
@@ -37,5 +38,22 @@ public class HltedcmRIL extends SamsungQcomRIL {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         Settings.Global.putInt(mContext.getContentResolver(),
             Settings.Global.MOBILE_DATA_ALWAYS_ON, 1);
+    }
+
+
+    @Override
+    public void
+    setupDataCall(String radioTechnology, String profile, String apn,
+            String user, String password, String authType, String protocol,
+            Message result) {
+
+        super.setupDataCall(radioTechnology, profile, apn, user, password,
+                    authType, protocol, result);
+
+        try {
+            int prefNwType = Integer.parseInt(radioTechnology)-2;
+            setPreferredNetworkType(prefNwType, null);
+        } catch (NumberFormatException nfe) {
+        }
     }
 }
