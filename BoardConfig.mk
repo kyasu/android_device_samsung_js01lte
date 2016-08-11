@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,15 +60,10 @@ TARGET_PROVIDES_CAMERA_HAL := true
 COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/js01lte/cmhw
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/cmhw
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/js01lte/ril
-
-# GPS
-TARGET_NO_RPC := true
-TARGET_GPS_HAL_PATH := device/samsung/js01lte/gps
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
