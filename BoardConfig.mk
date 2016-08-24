@@ -37,7 +37,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974_sec_js01lte_dcm_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := cm_selinux_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/hltedcm
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
 
 # Audio
 BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
