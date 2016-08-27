@@ -112,6 +112,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libril_shim
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
