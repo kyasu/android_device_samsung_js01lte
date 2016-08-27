@@ -70,7 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.default_wappush=true \
     persist.data.qmi.adb_logmask=0 \
     ro.ril.telephony.mqanelements=6 \
-    ro.telephony.ril_class=HltedcmRIL \
+    ro.telephony.ril_class=SamsungQcomRIL \
     ro.telephony.default_network=9 \
     telephony.lteOnGsmDevice=1
 
