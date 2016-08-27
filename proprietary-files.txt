@@ -353,7 +353,7 @@ vendor/lib/libdisp-aba.so
 -vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
 
-# Qualcomm framework (N9005)
+# Qualcomm framework
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -366,7 +366,7 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# Radio (N9005)
+# Radio
 bin/efsks
 bin/ks
 bin/qcks
