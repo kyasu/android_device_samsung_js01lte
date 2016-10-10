@@ -5,7 +5,7 @@ Device configuration for Samsung Galaxy J (SC-02F).
 WORK IN PROGRESS. WILL EAT YOUR CAT.
 ------------------------------------------------------------------
 
-  - For building CM-13.0, create '.repo/local_manifests/roomservice.xml' with
+  - For building CM-14.0, create '.repo/local_manifests/roomservice.xml' with
     the following content:
 
   <?xml version="1.0" encoding="UTF-8"?>
