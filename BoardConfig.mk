@@ -49,14 +49,13 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
 BOARD_HAVE_NEW_QCOM_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/js01lte/bluetooth/vnd_js01lte.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/js01lte/bluetooth
-BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
-BOARD_HAVE_BLUETOOTH_BCM := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/js01lte/bluetooth
+BOARD_CUSTOM_BT_CONFIG := device/samsung/js01lte/bluetooth/vnd_js01lte.txt
+BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Camera
 TARGET_USE_COMPAT_GRALLOC_ALIGN := true
