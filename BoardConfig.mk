@@ -22,6 +22,9 @@ TARGET_OTA_ASSERT_DEVICE := js01lte,js01ltedcm,hltejs01dcm,sc02f,SC-02F,SGH-N075
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 
+# Build
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+
 # Build with Clang by default
 USE_CLANG_PLATFORM_BUILD := true
 
