@@ -68,6 +68,7 @@ BOARD_RIL_CLASS := ../../../device/samsung/js01lte/ril
 
 # Graphics
 TARGET_HAVE_NEW_GRALLOC := true
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
