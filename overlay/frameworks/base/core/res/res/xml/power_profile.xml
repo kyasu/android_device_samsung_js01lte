@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
-
 <device name="Android">
     <item name="none">0</item>
     <item name="screen.on">58</item>
@@ -32,6 +28,7 @@
         <value>300000</value>
     </array>
     <item name="cpu.idle">4</item>
+    <item name="wakeup.power">0.15</item>
     <array name="cpu.active">
         <value>399</value>
         <value>308</value>
