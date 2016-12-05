@@ -105,7 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8974
+    lights.MSM8974
 
 # Media
 PRODUCT_COPY_FILES += \
