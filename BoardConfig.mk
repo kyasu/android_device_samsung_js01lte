@@ -39,7 +39,12 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := cm_msm8974_sec_defconfig
+ifneq ($(RECOVERY_VARIANT),twrp)
 TARGET_KERNEL_VARIANT_CONFIG := cm_msm8974_sec_js01lte_dcm_defconfig
+endif
+ifeq ($(RECOVERY_VARIANT),twrp)
+TARGET_KERNEL_VARIANT_CONFIG := tw_msm8974_sec_js01lte_dcm_defconfig
+endif
 TARGET_KERNEL_SELINUX_CONFIG := cm_selinux_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
 
