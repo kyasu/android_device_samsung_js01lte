@@ -395,7 +395,9 @@ etc/wifi/bcmdhd_ibss.bin
 etc/wifi/bcmdhd_mfg.bin
 etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_mfg.txt_muratafem1
 etc/wifi/nvram_net.txt
+etc/wifi/nvram_net.txt_muratafem1
 
 # Widevine
 vendor/lib/libwvdrm_L1.so
