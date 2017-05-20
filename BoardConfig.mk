@@ -135,11 +135,14 @@ TW_THEME := portrait_hdpi
 # BRIGHTNESS causes twrp not booting up
 #TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.190/leds/lcd-backlight/brightness"
 #TW_MAX_BRIGHTNESS := 255
+TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_CRYPTO := true
 TW_EXCLUDE_SUPERSU := true
+TW_USE_MINUI_CUSTOM_FONTS := true
+BOARD_GLOBAL_CFLAGS += -DTW_USE_MINUI_CUSTOM_FONTS
 endif
 
 # SELinux
