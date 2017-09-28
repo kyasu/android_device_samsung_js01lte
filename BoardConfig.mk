@@ -69,6 +69,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # CMHW
 BOARD_HARDWARE_CLASS += device/samsung/js01lte/cmhw
 
+# Extended Filesystem Support
+TARGET_KERNEL_HAVE_EXFAT := true
+
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
