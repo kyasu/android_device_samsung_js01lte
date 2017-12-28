@@ -113,7 +113,7 @@ TARGET_RIL_VARIANT := caf
 #RECOVERY_VARIANT := twrp
 # Recovery
 ifneq ($(RECOVERY_VARIANT),twrp)
-TARGET_RECOVERY_FSTAB := device/samsung/js01lte/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/js01lte/rootdir/etc/fstab.full
 endif
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_HAS_DOWNLOAD_MODE := true
