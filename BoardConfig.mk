@@ -20,6 +20,9 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/js01lte/include
 
 TARGET_OTA_ASSERT_DEVICE := js01lte,js01ltedcm,hltejs01dcm,sc02f,SC-02F,SGH-N075
 
+# ADB Legacy Interface
+TARGET_USES_LEGACY_ADB_INTERFACE := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 
