@@ -40,6 +40,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
+LZMA_RAMDISK_TARGETS := recovery
 ifneq ($(RECOVERY_VARIANT),twrp)
 TARGET_KERNEL_CONFIG := lineage_js01lte_defconfig
 endif
