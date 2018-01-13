@@ -1178,12 +1178,6 @@ on property:wlan.driver.status=ok
 
 # end of wifi
 
-service wifi-crda /system/bin/sh /system/etc/init.crda.sh
-   class late_start
-   user root
-   disabled
-   oneshot
-
 on property:sys.boot_completed=1
     setprop sys.io.scheduler bfq
 
