@@ -92,6 +92,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/js01lte/power/power_ext.c
 
+# Properties
+TARGET_SYSTEM_PROP += device/samsung/js01lte/system.prop
+
 # Radio
 BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
