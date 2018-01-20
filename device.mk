@@ -120,9 +120,6 @@ PRODUCT_PACKAGES += \
     libsecnativefeature \
     libshim_cutils_atomic
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
