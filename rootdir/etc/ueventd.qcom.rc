@@ -226,15 +226,15 @@ v/ppp                  0660   radio      vpn
 /sys/devices/i2c.73/i2c-16/16-0018/input/input* delay     0664  system  system
 
 #JPN FeliCa
-/dev/felica               0660    mfc   system
-/dev/felica_pon           0660    mfc   system
-/dev/felica_cen           0660    mfc   felicalock
-/dev/felica_rfs           0440    mfc   system
-/dev/felica_rws           0660    mfc   system
-/dev/felica_ant           0660    mfc   system
-/dev/felica_int_poll      0400    mfc   system
-/dev/felica_uid           0220    mfc   system
-/dev/felica_uicc          0660    mfc   system
+/dev/felica               0666    root   system
+/dev/felica_pon           0666    root   system
+/dev/felica_cen           0666    root   system
+/dev/felica_rfs           0444    root   system
+/dev/felica_rws           0666    root   system
+/dev/felica_ant           0666    root   system
+/dev/felica_int_poll      0400    root   system
+/dev/felica_uid           0222    root   system
+/dev/felica_uicc          0666    root   system
 
 #JPN NFC
 /dev/ttyHSL1              0660    nfc   nfc
