@@ -23,14 +23,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 $(call inherit-product, device/samsung/js01lte/full_js01lte.mk)
 
-PRODUCT_DEVICE := js01lte
+## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_js01lte
+PRODUCT_DEVICE := js01lte
+PRODUCT_MODEL := SC-02F
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=js01lte \
-    PRODUCT_DEVICE=js01lte \
-    TARGET_DEVICE=js01lte \
-    PRODUCT_MODEL=SC-02F \
+    PRODUCT_NAME=SC-02F \
+    TARGET_DEVICE=SC-02F \
     PRIVATE_BUILD_DESC="hltejs01dcm-user 5.0 LRX21V SC02FOMSGPL2 release-keys"
 
 BUILD_FINGERPRINT := samsung/SC-02F/SC-02F:5.0/LRX21V/SC02FOMSGPL2:user/release-keys
