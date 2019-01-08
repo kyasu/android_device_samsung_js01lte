@@ -61,6 +61,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/vnd_js01lte.txt
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+# Encryption
+TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
+
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
