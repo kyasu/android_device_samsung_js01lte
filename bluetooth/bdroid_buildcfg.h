@@ -17,7 +17,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy J (SC-02F)"
+#define BTM_DEF_LOCAL_NAME   "Galaxy J"
 
 #define BTA_DISABLE_DELAY 100 /* in milliseconds */
 #define BLE_VND_INCLUDED TRUE
