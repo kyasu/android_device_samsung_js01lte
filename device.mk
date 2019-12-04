@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from msm8974-common
-$(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
+$(call inherit-product, device/samsung/js01lte/msm8974-common/msm8974.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/js01lte/js01lte-vendor.mk)
