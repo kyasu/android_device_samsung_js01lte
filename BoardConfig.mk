@@ -49,12 +49,6 @@ TARGET_KERNEL_CONFIG := twrp_js01lte_defconfig
 endif
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8974
 
-# Use Snapdragon LLVM if available on build server
-TARGET_USE_SDCLANG := true
-#SDCLANG := true
-#SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
-#SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
-
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
