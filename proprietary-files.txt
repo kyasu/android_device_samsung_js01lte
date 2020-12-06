@@ -336,11 +336,6 @@ etc/firmware/nfc_test.bin:vendor/firmware/nfc_test.bin
 # Perf
 vendor/lib/libqti-perfd-client.so
 
-# Postprocessing
-vendor/lib/libdisp-aba.so
--vendor/lib/libmm-abl.so
-vendor/lib/libmm-abl-oem.so
-
 # Qualcomm
 vendor/lib/libxml.so
 
