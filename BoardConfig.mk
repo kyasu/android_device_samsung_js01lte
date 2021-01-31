@@ -59,6 +59,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/vnd_js01lte.txt
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+# Custom Apns for hiding docomo apns
+CUSTOM_APNS_FILE := $(DEVICE_PATH)/dummy.xml
+CUSTOM_APNS_SCRIPT := $(DEVICE_PATH)/custom_apns.py
+
 # Encryption
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
